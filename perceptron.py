@@ -1,7 +1,7 @@
 # 模拟感知机
 import numpy as np
 
-# 模拟感知机与们
+# 模拟感知机与门
 def AND(x1, x2):
     x = np.array([x1, x2])
     w = np.array([0.5, 0.5])
@@ -11,6 +11,7 @@ def AND(x1, x2):
         return 0
     return 1
 
+# 与非门
 def NAND(x1, x2):
     x = np.array([x1, x2])
     w = np.array([-0.5, -0.5])
@@ -20,6 +21,7 @@ def NAND(x1, x2):
         return 0
     return 1
 
+# 或门
 def OR(x1, x2):
     x = np.array([x1, x2])
     w = np.array([0.5, 0.5])
